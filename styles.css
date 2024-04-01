@@ -1,7 +1,46 @@
+@font-face {
+  font-family: "outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "young-serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "outfit", sans-serif;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "young-serif", sans-serif;
+  font-weight: 400;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+img {
+  width: 90%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.card {
+  margin: 50px auto;
+  border: 0px;
+}
+
+h1 {
+  font-family: "young-serif";
 }
