@@ -24,6 +24,7 @@ body {
   font-family: "outfit", sans-serif;
   font-size: 16px;
 }
+
 .card {
   margin: 100px auto;
   border: 0px;
@@ -33,6 +34,15 @@ body {
   border-radius: 15px;
   padding: 15px;
 }
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius);
+}
+.card-head {
+  padding: 20px 20px 0 20px;
+}
+
 .card h1 {
   color: var(--Dark-Charcoal);
 }
@@ -58,16 +68,11 @@ h2 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-img {
-  width: 100%;
-  display: block;
-  border-radius: var(--border-radius);
-}
 
 .preparation-time {
   background-color: var(--Rose-White);
   padding: 20px;
-  margin: 20px 20px;
+  margin: 20px 10px;
   border-radius: var(--border-radius);
 }
 .preparation-time h2 {
@@ -76,10 +81,23 @@ img {
   font-weight: 600;
   font-size: 21px;
 }
+.preparation-time li::marker {
+  color: var(--Dark-Raspberry);
+}
+li {
+  padding-left: 10px;
+}
+li::marker {
+  color: var(--Nutmeg);
+}
+
+ol li::marker {
+  font-weight: 800;
+}
 
 h1 {
   font-family: "young-serif";
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .nutritions {
   margin: 30px;
@@ -89,6 +107,12 @@ h1 {
   color: var(--Nutmeg);
   font-weight: 600;
 }
+.preparation-time,
+.instructions,
+.ingredients {
+  line-height: 30px;
+}
+
 @media (max-width: 576px) {
   .container {
     margin: 0;
@@ -96,16 +120,22 @@ h1 {
   .card {
     margin: 0;
     width: 100%;
-    border-radius: 0;
     padding: 0;
+  }
+  .card h1 {
+    font-size: 35px;
   }
   .card-body {
-    padding: 0;
+    padding: 30px;
   }
-  .col-12 {
+  .card img {
     padding: 0;
+    border-radius: 0;
   }
   .col-sm-12 {
+    padding: 0;
+  }
+  .card-head {
     padding: 0;
   }
 }
